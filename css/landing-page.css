@@ -9,7 +9,7 @@
 }
 
 body {
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background: url(../img/intro-bg.webp) no-repeat center center;
     background-size: contain;
     background-color: black;
     /* height: 100%; */
