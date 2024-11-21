@@ -1,54 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-    content="Software developer currently lives in Dublin, Ireland(IE). Interested in Ruby, C and GoLang(Go), Databases Postgresql.
-    <meta name="author" content="Can Eldem">
-    <title>Can Eldem's page</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Experienced Full-Stack Developer | Ruby on Rails, Golang, Elixir, JavaScript </title>
+        <meta name="description" content="Full-stack developer based in Ireland with 10+ years of experience in building scalable applications and solving complex problems. Expert in Ruby on Rails, Golang, Elixir, and JavaScript.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            .hero-background {
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/intro-bg.webp") center/cover;
+                color: white;
+            }
+            .project-card {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .project-card .card-footer {
+                margin-top: auto;
+            }
+            .skill-tag {
+                margin-right: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+            .social-icon {
+                font-size: 1.5rem;
+                margin: 0 0.5rem;
+                color: #4a4a4a;
+            }
+            .social-icon:hover {
+                color: #3273dc;
+            }
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-    type="text/css">
-
-  </head>
-
-  <body>
-    <!-- Header -->
-    <div class="intro-header">
-
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="intro-message">
-              <h1>Hi, I am Can <img class="beer-can" src="img/beer-can-svgrepo-com.svg"> </h1>
-              <h3>Just a regular everyday normal developer </h3>
-              <hr class="intro-divider">
-              <!--<div class="modal-footer">-->
-
-                <div>
-                  <a href="https://goo.gl/forms/EnNOAt1a7D"  target="_blank" class="btn btn-outline-light" role="button"> Contact </a>
-                  <a href="https://github.com/eldemcan" target="_blank"  class="btn btn-outline-light" role="button"> Github </a>
-                  <a href="blog/output/index.html" target="_blank"  class="btn btn-outline-light" role="button"> Blog </a>
-                  <a href="https://www.linkedin.com/pub/can-eldem/19/45a/20" target="_blank" class="btn btn-outline-light" role="button"> LinkedIn </a>
+            .custom-section {
+                background: url("../img/intro-bg.webp") no-repeat center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Hero Section -->
+        <section class="hero is-medium custom-section">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title is-1 has-text-white">
+                    Hi, I'm Can
+                </h1>
+                    <h2 class="subtitle is-3 has-text-white">
+                    Building impactful products with elegant code
+                </h2>
+                    <div class="buttons">
+                        <a href="https://goo.gl/forms/EnNOAt1a7D" target="_blank" class="button is-primary is-medium">Get in Touch</a>
+                        <a href="https://www.linkedin.com/in/can-eldem-02045a19/" target="_blank" class="button is-light is-medium">LinkedIn</a>
+                    </div>
                 </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.intro-header -->
+        </section>
 
-<script src="js/bootstrap.min.js"></script>
-</body>
+        <!-- About Section -->
+        <section class="section">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-8">
+                        <div class="content">
+                            <h2 class="title is-2">About Me</h2>
+                            <p class="is-size-5">
+                             I'm a seasoned full-stack developer based in Ireland with 10 years of industrial experience across diverse companies.
+                             Passionate about building scalable applications and solving complex problems, I bring expertise in Ruby on Rails, Golang, Elixir, and JavaScript to deliver robust and innovative solutions tailored to meet evolving business needs.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section has-background-light">
+            <div class="container">
+                <h2 class="title is-2 has-text-centered mb-6">Featured Projects</h2>
+                <div class="columns is-multiline">
+                    <!-- GigsForPeeps -->
+                    <div class="column is-4">
+                        <div class="card project-card">
+                            <div class="card-content">
+                                <p class="title is-4">GigsForPeeps</p>
+                                <p class="subtitle is-6">Music Platform</p>
+                                <div class="content">
+                                A dedicated platform helping people discover live music events across Ireland.
+                            </div>
+                                <div class="tags">
+                                    <span class="tag is-info">Elixir</span>
+                                    <span class="tag is-info">PostgreSQL</span>
+                                    <span class="tag is-info">JavaScript</span>
+                                    <span class="tag is-info">ReactJs</span>
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://www.gigsforpeeps.com/" class="card-footer-item">Visit Site</a>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <!-- RapidForge -->
+                    <div class="column is-4">
+                        <div class="card project-card">
+                            <div class="card-content">
+                                <p class="title is-4">RapidForge</p>
+                                <p class="subtitle is-6">Development Tooling</p>
+                                <div class="content">
+                                High-performance development tools designed to streamline your workflow and boost productivity.
+                            </div>
+                                <div class="tags">
+                                    <span class="tag is-info">Golang</span>
+                                    <span class="tag is-info">Htmx</span>
+                                    <span class="tag is-info">JavaScript</span>
+                                    <span class="tag is-info">SQLite</span>
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://rapidforge.io/" class="card-footer-item">Learn More</a>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <!-- Stormkit -->
+                    <div class="column is-4">
+                        <div class="card project-card">
+                            <div class="card-content">
+                                <p class="title is-4">Stormkit.io</p>
+                                <p class="subtitle is-6">Ex Co-founder</p>
+                                <div class="content">
+                                Modern deployment platform enabling teams to ship web applications faster and more reliably.
+                            </div>
+                                <div class="tags">
+                                    <span class="tag is-info">Golang</span>
+                                    <span class="tag is-info">Cloud Infrastructure</span>
+                                    <span class="tag is-info">PostgreSQL</span>
+                                    <span class="tag is-info">JavaScript</span>
+                                    <span class="tag is-info">ReactJs</span>
+                                    <span class="tag is-info">AWS</span>
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://www.stormkit.io/" class="card-footer-item">Explore</a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="title is-2 has-text-centered mb-6">Technical Expertise</h2>
+                <div class="columns is-centered">
+                    <div class="column is-8">
+                        <div class="content">
+                            <div class="field">
+                                <label class="label">Primary Technologies</label>
+                                <div class="tags">
+                                    <span class="tag is-medium is-primary skill-tag">Ruby on Rails</span>
+                                    <span class="tag is-medium is-primary skill-tag">JavaScript</span>
+                                    <span class="tag is-medium is-primary skill-tag">Golang</span>
+                                    <span class="tag is-medium is-primary skill-tag">Elixir</span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Databases & Infrastructure</label>
+                                <div class="tags">
+                                    <span class="tag is-medium is-info skill-tag">PostgreSQL</span>
+                                    <span class="tag is-medium is-info skill-tag">Redis</span>
+                                    <span class="tag is-medium is-info skill-tag">Docker</span>
+                                    <span class="tag is-medium is-info skill-tag">AWS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section has-background-light">
+            <div class="container">
+                <h2 class="title is-2 has-text-centered mb-6">Get in Touch</h2>
+                <div class="columns is-centered">
+                    <div class="column is-6 has-text-centered">
+                        <div class="content">
+                            <p class="is-size-5 mb-5">
+                            Interested in collaborating or just want to say hello? Feel free to reach out
+                        </p>
+                            <div class="social-links">
+                                <a href="https://github.com/eldemcan" class="social-icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/can-eldem-02045a19/" class="social-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="blog/output/index.html" class="social-icon">
+                                    <i class="fa-solid fa-blog"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
 </html>
