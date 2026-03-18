@@ -1,3 +1,7 @@
 /.project
 blog/tiddlers
 blog/tiddlywiki.info
+
+# Ignore Jekyll build outputs
+_site/
+output/
